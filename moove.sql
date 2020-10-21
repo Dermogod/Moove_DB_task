@@ -28,7 +28,7 @@ SELECT first_name, last_name, room FROM test_table WHERE room = '5424.0';
 -------------- 2. добавление нового телефона сотруднику;
 UPDATE test_table SET phone = '+79159344480' WHERE first_name = 'William' and last_name = 'Anderson' and position = 'Specialist' RETURNING *;
 
--------------- 3. получение списка телефонов всех сотрудников определенной должности в одном из от-делов; 
+-------------- 3. получение списка телефонов всех сотрудников определенной должности в одном из отделов; 
 
 SELECT phone FROM test_table WHERE depatment = 'R&D' and position = 'Intern';
 
