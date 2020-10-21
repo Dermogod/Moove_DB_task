@@ -35,7 +35,8 @@ SELECT phone FROM test_table WHERE depatment = 'R&D' and position = 'Intern';
 --------------4.добавление нового сотрудника;
 
 INSERT INTO test_table  VALUES (
-'167979', 'Clerical Office',
+'167979', 
+'Clerical Office',
 'test@mail.ru',
 'Student',
 'Test',
